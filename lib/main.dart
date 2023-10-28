@@ -24,6 +24,7 @@ class Body extends StatelessWidget {
       color: Colors.grey,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Container(
             width: 100,

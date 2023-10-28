@@ -29,11 +29,17 @@ class ConstraintWidget extends StatelessWidget {
       height: 500,
       width: 500,
       color: Colors.blue,
-      child: SingleChildScrollView(
+      child: Center(
         child: Container(
-          color: Colors.red,
-          height: 30000,
+          constraints: const BoxConstraints(
+            minHeight: 200,
+            minWidth: 200,
+            maxHeight: 300,
+            maxWidth: 250,
+          ),
+          height: 300,
           width: 300,
+          color: Colors.red,
         ),
       ),
     );

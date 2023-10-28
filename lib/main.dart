@@ -29,7 +29,8 @@ class ConstraintWidget extends StatelessWidget {
       height: 500,
       width: 500,
       color: Colors.blue,
-      child: Center(
+      child: Align(
+        alignment: Alignment.topRight,
         child: Container(
           color: Colors.red,
           height: 300,

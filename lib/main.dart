@@ -26,6 +26,11 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Center(
+      child: Container(
+        color: Colors.red,
+        child: Text('Hello'),
+      ),
+    );
   }
 }

@@ -19,8 +19,10 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Flexible(child: Container(color: Colors.red,)),
-        Flexible(child: Container(color: Colors.blue,)),
+        Flexible(flex: 1, child: Container(color: Colors.red,)),
+        Flexible(flex: 2, child: Container(color: Colors.blue,)),
+        Flexible(flex: 3, child: Container(color: Colors.green,)),
+        Flexible(flex: 4, child: Container(color: Colors.yellow,)),
       ],
     );
   }

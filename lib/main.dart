@@ -29,11 +29,10 @@ class ConstraintWidget extends StatelessWidget {
       height: 500,
       width: 500,
       color: Colors.blue,
-      child: Align(
-        alignment: Alignment.topRight,
+      child: SingleChildScrollView(
         child: Container(
           color: Colors.red,
-          height: 300,
+          height: 30000,
           width: 300,
         ),
       ),

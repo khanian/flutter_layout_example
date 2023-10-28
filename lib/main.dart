@@ -17,16 +17,36 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Container(width: 50, height: 200, color: Colors.red,),
-        Expanded(child: Container(color: Colors.blue, width: 100,)),
-        Flexible(child: Container(color: Colors.red, width: 100,))
-        // Flexible(flex: 1, child: Container(color: Colors.red,)),
-        // Flexible(flex: 2, child: Container(color: Colors.blue,)),
-        // Flexible(flex: 3, child: Container(color: Colors.green,)),
-        // Flexible(flex: 4, child: Container(color: Colors.yellow,)),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.red,
+            margin: const EdgeInsets.symmetric(vertical: 8),
+          ),
+          // Expanded(child: Container(color: Colors.blue,)),
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.red,
+            margin: const EdgeInsets.symmetric(vertical: 8),
+          ),
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.red,
+            margin: const EdgeInsets.symmetric(vertical: 8),
+          ),
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.red,
+            margin: const EdgeInsets.symmetric(vertical: 8),
+          ),
+        ],
+      ),
     );
   }
 }

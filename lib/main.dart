@@ -17,6 +17,11 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return Column(
+      children: [
+        Flexible(child: Container(color: Colors.red,)),
+        Flexible(child: Container(color: Colors.blue,)),
+      ],
+    );
   }
 }

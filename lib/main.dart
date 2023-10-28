@@ -19,13 +19,14 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     // return const Placeholder();
     return Container(
-      // height: double.infinity,
+      height: double.infinity,
       // width: double.infinity,
       // color: Colors.grey,
+      // child: Column(
       child: Row(
-        mainAxisSize: MainAxisSize.min,
+        // mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
             width: 100,

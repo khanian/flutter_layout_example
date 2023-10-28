@@ -41,7 +41,7 @@ class Body extends StatelessWidget {
           color: Colors.blue,
         ),
         Align(
-          alignment: Alignment.topRight,
+          alignment: Alignment(0.5, 0.5),
           child: Container(
             width: 200,
             height: 200,

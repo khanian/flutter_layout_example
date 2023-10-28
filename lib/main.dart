@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    home: HomeWidget()
-  ));
+  runApp(const MaterialApp(home: HomeWidget()));
 }
 
 class HomeWidget extends StatelessWidget {
@@ -20,17 +18,38 @@ class HomeWidget extends StatelessWidget {
   }
 }
 
-
 class Body extends StatelessWidget {
   const Body({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        color: Colors.red,
-        child: Text('Hello'),
-      ),
+    return Stack(
+      children: [
+        Container(
+          width: 500,
+          height: 500,
+          color: Colors.black,
+        ),
+        Container(
+          width: 400,
+          height: 400,
+          color: Colors.red,
+        ),
+        Container(
+          width: 300,
+          height: 300,
+          color: Colors.blue,
+        ),
+        Positioned(
+          bottom: 50,
+          right: 30,
+          child: Container(
+            width: 200,
+            height: 200,
+            color: Colors.green,
+          ),
+        ),
+      ],
     );
   }
 }

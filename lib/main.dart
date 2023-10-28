@@ -31,12 +31,7 @@ class ConstraintWidget extends StatelessWidget {
       color: Colors.blue,
       child: Center(
         child: Container(
-          constraints: const BoxConstraints(
-            minHeight: 200,
-            minWidth: 200,
-            maxHeight: 300,
-            maxWidth: 250,
-          ),
+          constraints: BoxConstraints.tight(Size(200, 200)),
           height: 300,
           width: 300,
           color: Colors.red,

@@ -29,7 +29,7 @@ class ConstraintWidget extends StatelessWidget {
       height: 500,
       width: 500,
       color: Colors.blue,
-      child: Center(child: UnconstrainedBox(
+      child: Center(child: OverflowBox(
         child: Container(
           width: 300,
           height: 700,

@@ -31,7 +31,7 @@ class ConstraintWidget extends StatelessWidget {
       color: Colors.blue,
       child: Center(
         child: Container(
-          constraints: BoxConstraints.loose(Size(200, 200)),
+          constraints: BoxConstraints.tight(Size(200, 200)),
           color: Colors.red,
           child: Container(
             width: 50,

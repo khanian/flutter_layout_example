@@ -25,17 +25,18 @@ class ConstraintWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 500,
-      width: 500,
-      color: Colors.blue,
-      child: Center(child: OverflowBox(
-        child: Container(
-          width: 300,
-          height: 700,
-          color: Colors.green,
+    return Row(
+      children: [
+        Expanded(
+          child: Container(
+              color: Colors.blue,
+              child: Text('Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! ', style: TextStyle(fontSize: 30),)),
         ),
-      )),
+        Expanded(
+          child: Container(color: Colors.red,
+              child: Text('Hello Word!', style: TextStyle(fontSize: 30),)),
+        )
+      ],
     );
   }
 }

@@ -27,12 +27,12 @@ class ConstraintWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(
+        Flexible(
           child: Container(
               color: Colors.blue,
               child: Text('Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! Hello Word! ', style: TextStyle(fontSize: 30),)),
         ),
-        Expanded(
+        Flexible(
           child: Container(color: Colors.red,
               child: Text('Hello Word!', style: TextStyle(fontSize: 30),)),
         )

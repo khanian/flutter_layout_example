@@ -29,17 +29,13 @@ class ConstraintWidget extends StatelessWidget {
       height: 500,
       width: 500,
       color: Colors.blue,
-      child: Center(
+      child: Center(child: UnconstrainedBox(
         child: Container(
-          constraints: BoxConstraints.tight(Size(200, 200)),
-          color: Colors.red,
-          child: Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
+          width: 300,
+          height: 700,
+          color: Colors.green,
         ),
-      ),
+      )),
     );
   }
 }
